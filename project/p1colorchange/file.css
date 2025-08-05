@@ -1,0 +1,58 @@
+body {
+  display: flex;                  /* Make the body a flex container */
+  justify-content: center;       /* Center horizontally */
+  align-items: center;           /* Center vertically */
+  height: 100vh;                 /* Full height of screen */
+  margin: 0;                     /* Remove default spacing */
+  background-color: blue;       /* Optional: white background */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;            /* Center text inside */
+}
+h1 {
+  color: red;
+  font-size: 30px;
+}
+
+.button {
+ width: 100px;
+ height : 100px;
+ display: inline-block;
+ border: solid black 2px;
+}
+#grey{
+  background-color: grey;
+}
+#red {
+  background-color: red;
+}
+#white {
+  background-color: white;
+}
+#yellow {
+  background-color: yellow;
+}
+.buttons{
+    display: flex;
+
+    justify-content: center;
+    /* Before:      📦 📦 📦 📦📦
+    After:    📦 📦 📦 📦 */
+
+
+    flex-wrap: wrap;
+    /* Big screen: 📦 📦 📦 📦
+    Small screen:
+    📦 📦
+    📦 📦 */
+    
+    gap : 20px;
+    /* /* Before:      📦 📦 📦 📦
+    After:    📦 📦 📦 📦 */
+
+    margin: 30px 0
+    ;
+}
+
